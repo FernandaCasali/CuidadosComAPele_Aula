@@ -48,38 +48,22 @@ a:hover {
 	border-radius: 10px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 	margin-top: 3rem;
-}
-
-h1 {
-	font-size: 3.5rem;
-	margin-bottom: 1rem;
-}
-
-h2 {
-	font-size: 2.5rem;
-}
-
-h3 {
-	font-size: 2rem;
-}
-
-h4 {
-	font-size: 1.8rem;
-}
-
-figure {
-	text-align: center;
-	margin: 2rem 0;
+	display: flex;
+	align-items: center;
+	gap: 2rem;
 }
 
 .imagens-site {
 	border-radius: 10px;
-	width: 100%; /* Todas as imagens ocuparão 100% da largura do container */
-	max-width: 400px; /* Define um tamanho máximo uniforme */
+	width: 100%;
+	max-width: 300px;
 	height: auto;
 	display: block;
-	margin: 0 auto; /* Centraliza as imagens */
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.texto {
+	flex: 1;
 }
 
 #compras {
@@ -134,7 +118,7 @@ textarea {
 	border-radius: 5px;
 	font-size: 1.8rem;
 	margin-bottom: 1rem;
-	width: 100%; /* Ajusta a largura dos campos de entrada */
+	width: 100%;
 	max-width: 400px;
 }
 
@@ -161,16 +145,11 @@ textarea {
 }
 
 @media (max-width: 768px) {
-	.imagens-site {
-		width: 100%;
-		max-width: 300px; /* Redimensionamento para telas menores */
+	.conteudo, .conteudo-topo {
+		flex-direction: column;
+		align-items: center;
 	}
-}
 
-@media (max-width: 480px) {
-	nav {
-		text-align: center;
-	}
 	.imagens-site {
 		max-width: 250px;
 	}
