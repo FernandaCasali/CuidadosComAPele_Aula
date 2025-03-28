@@ -51,20 +51,20 @@ a:hover {
 }
 
 h1 {
-	font-size: 3.5rem; /* Tamanho maior para título principal */
+	font-size: 3.5rem;
 	margin-bottom: 1rem;
 }
 
 h2 {
-	font-size: 2.5rem; /* Tamanho maior para títulos secundários */
+	font-size: 2.5rem;
 }
 
 h3 {
-	font-size: 2rem; /* Tamanho maior para cabeçalhos */
+	font-size: 2rem;
 }
 
 h4 {
-	font-size: 1.8rem; /* Tamanho maior para subtítulos */
+	font-size: 1.8rem;
 }
 
 figure {
@@ -73,14 +73,17 @@ figure {
 }
 
 .imagens-site {
-	border-radius: 10px; /* Cantos arredondados */
-	max-width: 100%;
+	border-radius: 10px;
+	width: 100%; /* Todas as imagens ocuparão 100% da largura do container */
+	max-width: 400px; /* Define um tamanho máximo uniforme */
 	height: auto;
+	display: block;
+	margin: 0 auto; /* Centraliza as imagens */
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 #compras {
-	background-color: #9370db; /* Roxo médio */
+	background-color: #9370db;
 	color: #fff;
 	width: 150px;
 	height: 100px;
@@ -94,7 +97,7 @@ figure {
 }
 
 #grid-conteudo {
-	background-color: #d8bfd8; /* Roxo claro para grid de conteúdo */
+	background-color: #d8bfd8;
 	padding: 2rem 0;
 }
 
@@ -115,7 +118,7 @@ figure {
 }
 
 #formulario {
-	background-color: #d8bfd8; /* Roxo claro para formulário */
+	background-color: #d8bfd8;
 	padding: 2rem 0;
 	padding-left: 5rem;
 	margin-top: 3rem;
@@ -126,11 +129,13 @@ figure {
 input[type="text"],
 input[type="tel"],
 textarea {
-	border: solid 1px #9370db; /* Roxo médio para bordas dos campos */
+	border: solid 1px #9370db;
 	padding: 10px;
 	border-radius: 5px;
 	font-size: 1.8rem;
 	margin-bottom: 1rem;
+	width: 100%; /* Ajusta a largura dos campos de entrada */
+	max-width: 400px;
 }
 
 textarea {
@@ -139,7 +144,7 @@ textarea {
 
 #btn-limpar,
 #btn-enviar {
-	background-color: #9370db; /* Roxo médio para botões */
+	background-color: #9370db;
 	color: #fff;
 	padding: 10px 20px;
 	font-weight: bold;
@@ -152,17 +157,21 @@ textarea {
 
 #btn-limpar:hover,
 #btn-enviar:hover {
-	background-color: #8a2be2; /* Roxo violeta mais escuro ao passar o mouse */
+	background-color: #8a2be2;
 }
 
 @media (max-width: 768px) {
 	.imagens-site {
 		width: 100%;
+		max-width: 300px; /* Redimensionamento para telas menores */
 	}
 }
 
 @media (max-width: 480px) {
 	nav {
 		text-align: center;
+	}
+	.imagens-site {
+		max-width: 250px;
 	}
 }
