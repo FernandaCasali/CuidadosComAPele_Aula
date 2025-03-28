@@ -1,0 +1,168 @@
+* {
+	margin: 0;
+	border: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: Arial, sans-serif;
+	font-size: 62.5%;
+	background-color: #e6e6fa; /* Fundo roxo claro */
+}
+
+header, footer {
+	background-color: #8a2be2; /* Roxo violeta */
+	color: #fff; /* Texto branco */
+	font-size: 1.8rem;
+	padding: 1rem;
+	width: 100%;
+}
+
+nav {
+	text-align: right;
+	font-size: 1.6rem;
+	word-spacing: 10px;
+	margin-right: 5%;
+	padding-bottom: 5px;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+	transition: color 0.3s ease;
+}
+
+a:hover {
+	color: #ffd700; /* Amarelo ouro ao passar o mouse */
+}
+
+.conteudo, .conteudo-topo {
+	font-size: 1.6rem;
+	background-color: #f8f8ff; /* Roxo claro para conteúdo */
+	padding: 1.5rem;
+	text-align: justify;
+	max-width: 95%;
+	margin: 0 auto;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	margin-top: 3rem;
+}
+
+h1 {
+	font-size: 3.5rem; /* Tamanho maior para título principal */
+	margin-bottom: 1rem;
+}
+
+h2 {
+	font-size: 2.5rem; /* Tamanho maior para títulos secundários */
+}
+
+h3 {
+	font-size: 2rem; /* Tamanho maior para cabeçalhos */
+}
+
+h4 {
+	font-size: 1.8rem; /* Tamanho maior para subtítulos */
+}
+
+figure {
+	text-align: center;
+	margin: 2rem 0;
+}
+
+.imagens-site {
+	border-radius: 10px; /* Cantos arredondados */
+	max-width: 100%;
+	height: auto;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#compras {
+	background-color: #9370db; /* Roxo médio */
+	color: #fff;
+	width: 150px;
+	height: 100px;
+	right: 0;
+	position: fixed;
+	text-align: center;
+	margin-top: 6rem;
+	z-index: 1;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#grid-conteudo {
+	background-color: #d8bfd8; /* Roxo claro para grid de conteúdo */
+	padding: 2rem 0;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-gap: 20px;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.grid div {
+	background-color: #fff;
+	text-align: center;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#formulario {
+	background-color: #d8bfd8; /* Roxo claro para formulário */
+	padding: 2rem 0;
+	padding-left: 5rem;
+	margin-top: 3rem;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+input[type="tel"],
+textarea {
+	border: solid 1px #9370db; /* Roxo médio para bordas dos campos */
+	padding: 10px;
+	border-radius: 5px;
+	font-size: 1.8rem;
+	margin-bottom: 1rem;
+}
+
+textarea {
+	resize: vertical;
+}
+
+#btn-limpar,
+#btn-enviar {
+	background-color: #9370db; /* Roxo médio para botões */
+	color: #fff;
+	padding: 10px 20px;
+	font-weight: bold;
+	text-align: center;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+#btn-limpar:hover,
+#btn-enviar:hover {
+	background-color: #8a2be2; /* Roxo violeta mais escuro ao passar o mouse */
+}
+
+@media (max-width: 768px) {
+	.imagens-site {
+		width: 100%;
+	}
+}
+
+@media (max-width: 480px) {
+	nav {
+		text-align: center;
+	}
+}
